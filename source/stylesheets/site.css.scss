@@ -1,5 +1,5 @@
 body {
-  background-color: #fbc547;
+  background-color: white;
   color: #333;
   font-family: -apple-system, BlinkMacSystemFont, "Avenir Next", "Avenir",
     "Segoe UI", "Lucida Grande", "Helvetica Neue", "Helvetica", "Fira Sans",
@@ -21,4 +21,29 @@ a {
 .middleman-logo {
   margin-bottom: 1rem;
   width: 10rem;
+}
+#path336::before {
+  transform: scaleX(0);
+  transform-origin: bottom right;
+}
+#path336:hover::before {
+  transform: scaleX(1);
+  transform-origin: bottom left;
+}
+#path336::before {
+  content: " ";
+  display: block;
+  position: absolute;
+  top: 0; right: 0; bottom: 0; left: 0;
+  inset: 0 0 0 0;
+  background-color: aquamarine;
+  z-index: -1;
+  transition: transform .3s ease;
+
+}
+
+
+
+#contact-me{
+  width: 200px;
 }
